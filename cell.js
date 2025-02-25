@@ -140,7 +140,7 @@ function checkFinalScore() {
         popup: "animate__animated animate__fadeOutUp",
       },
     }).then(() => {
-      window.location.href = "Competition.html";
+      window.location.href = "/Master-game/Competition.html";
     });
   } else if (team2Score > team1Score) {
     totalTeam2Score += 1;
@@ -158,7 +158,7 @@ function checkFinalScore() {
         popup: "animate__animated animate__fadeOutUp",
       },
     }).then(() => {
-      window.location.href = "Competition.html";
+      window.location.href = "/Master-game/Competition.html";
     });
   } else {
     Swal.fire({
@@ -173,7 +173,7 @@ function checkFinalScore() {
         popup: "animate__animated animate__fadeOutUp",
       },
     }).then(() => {
-      window.location.href = "Competition.html";
+      window.location.href = "/Master-game/Competition.html";
     });
   }
 }
