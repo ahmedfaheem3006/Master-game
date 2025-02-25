@@ -264,7 +264,7 @@ function checkFinalScore() {
             icon: "success",
             confirmButtonText: "العودة للقائمة الرئيسية",
         }).then(() => {
-            window.location.href = 'Master-game/Competition.html';
+            window.location.href = 'Competition.html';
         });
     } else if (score2 > score1) {
         Swal.fire({
@@ -273,7 +273,7 @@ function checkFinalScore() {
             icon: "success",
             confirmButtonText: "العودة للقائمة الرئيسية",
         }).then(() => {
-            window.location.href = 'Master-game/Competition.html';
+            window.location.href = 'Competition.html';
         });
     } else {
         Swal.fire({
@@ -282,7 +282,7 @@ function checkFinalScore() {
             icon: "info",
             confirmButtonText: "العودة للقائمة الرئيسية",
         }).then(() => {
-            window.location.href = 'Master-game/Competition.html';
+            window.location.href = 'Competition.html';
         });
     }
 }
