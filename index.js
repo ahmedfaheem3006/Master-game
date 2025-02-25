@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("team2Name", team2Name);
 
         // الانتقال إلى الصفحة الثانية
-        window.location.href = "/Competition.html";
+        window.location.href = "/Master-game/Competition.html";
     }
 
     // تعيين وظيفة startGame لزر Start
