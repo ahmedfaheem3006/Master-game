@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مسابقة الخلية</title>
+    <link rel="stylesheet" href="cell.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="fullcell">
+      <div class="team-left" onclick="selectTeam('Team 1')">
+        <div class="teamname" id="team1-name"></div>
+        <div class="score" id="team1-score">0 Points</div>
+      </div>
+
+      <div class="maincell">
+        <h1>مسابقة الخلية</h1>
+        <button id="team1Btn" title="team 1"></button>
+        <button id="team2Btn" title="team 2"></button>
+        <div id="bg">
+        </div>
+        <div id="bg2">
+        </div>
+        <div class="grid" id="gameGrid"></div>
+        <div id="finish-game" class="finish-btn">Finish</div>
+      </div>
+
+      <div class="team-right" onclick="selectTeam('Team 2')">
+        <div class="teamname" id="team2-name"></div>
+        <div class="score" id="team2-score">0 Points</div>
+      </div>
+    </div>
+    <script src="cell.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

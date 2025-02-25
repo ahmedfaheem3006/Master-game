@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ By Categories</title>
+    <link rel="stylesheet" href="Mcq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="categories-screen" class="screen">
+      <div class="twoteam">
+        <div class="team-left" onclick="selectTeam('Team 1')">
+          <div class="teamname" id="team1-name">Team 1</div>
+          <div class="score" id="team1-score">0 Points</div>
+        </div>
+
+        <div class="return1" onclick="finishGame()">Finish</div>
+
+        <div class="team-right" onclick="selectTeam('Team 2')">
+          <div class="teamname" id="team2-name">Team 2</div>
+          <div class="score" id="team2-score">0 Points</div>
+        </div>
+      </div>
+      <h2>Menu</h2>
+      <div class="categories-container">
+        <!-- First Category: English Premier League -->
+        <div class="category-column">
+          <h3>English Premier League</h3>
+          <button
+            class="question-btn"
+            data-category="English Premier League"
+            data-points="10"
+            onclick="startQuestion(10, 'English Premier League')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="English Premier League"
+            data-points="30"
+            onclick="startQuestion(30, 'English Premier League')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="English Premier League"
+            data-points="50"
+            onclick="startQuestion(50, 'English Premier League')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="English Premier League"
+            data-points="70"
+            onclick="startQuestion(70, 'English Premier League')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Second Category: La Liga -->
+        <div class="category-column">
+          <h3>La Liga</h3>
+          <button
+            class="question-btn"
+            data-category="La Liga"
+            data-points="10"
+            onclick="startQuestion(10, 'La Liga')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="La Liga"
+            data-points="30"
+            onclick="startQuestion(30, 'La Liga')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="La Liga"
+            data-points="50"
+            onclick="startQuestion(50, 'La Liga')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="La Liga"
+            data-points="70"
+            onclick="startQuestion(70, 'La Liga')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Third Category: Cristiano Ronaldo -->
+        <div class="category-column">
+          <h3>Cristiano Ronaldo</h3>
+          <button
+            class="question-btn"
+            data-category="Cristiano Ronaldo"
+            data-points="10"
+            onclick="startQuestion(10, 'Cristiano Ronaldo')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Cristiano Ronaldo"
+            data-points="30"
+            onclick="startQuestion(30, 'Cristiano Ronaldo')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Cristiano Ronaldo"
+            data-points="50"
+            onclick="startQuestion(50, 'Cristiano Ronaldo')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Cristiano Ronaldo"
+            data-points="70"
+            onclick="startQuestion(70, 'Cristiano Ronaldo')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Fourth Category: Lionel Messi -->
+        <div class="category-column">
+          <h3>Lionel Messi</h3>
+          <button
+            class="question-btn"
+            data-category="Lionel Messi"
+            data-points="10"
+            onclick="startQuestion(10, 'Lionel Messi')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Lionel Messi"
+            data-points="30"
+            onclick="startQuestion(30, 'Lionel Messi')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Lionel Messi"
+            data-points="50"
+            onclick="startQuestion(50, 'Lionel Messi')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Lionel Messi"
+            data-points="70"
+            onclick="startQuestion(70, 'Lionel Messi')"
+          >
+            70 Points
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="question-screen" class="screen">
+      <div class="back-to-categories">
+        <a href="#" onclick="goBackToCategories()">Back to Categories</a>
+      </div>
+      <div class="timer-container">
+        <div class="timer">
+          <div class="clock" id="clock">30</div>
+        </div>
+      </div>
+      <div id="question-container" class="question-container"></div>
+    </div>
+
+    <script src="Mcq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
