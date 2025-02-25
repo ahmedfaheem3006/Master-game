@@ -792,7 +792,7 @@ function finishGame() {
   localStorage.setItem("mcqTeam2Points", team2Score);
 
   // الانتقال إلى صفحة المنافسة
-  window.location.href = "Master-game/competition.html";
+  window.location.href = "competition.html";
 }
 
 
